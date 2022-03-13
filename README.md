@@ -1,6 +1,7 @@
-# Pong - in Python
-The classic Pong Game built using Python Turtle.
-I have made use of OOP in Python to create this infamous pong game which was once the hype of gaming industry.
-We create an object from a class for each component - Paddle, Ball, Score and Display Content.
-When any user misses the ball, and it hits the wall, the direction of ball is reset and the color of display content - Text, Circle and Dashed Line changes randomly, with a blink effect.
-Open the project in PyCharm(prefered IDE) and hit Run button.
+# Pong Game in Python
+You need to pass the ball to the sides without touching the wall. <br>
+When the ball hits the left or right wall, i.e., when either of the user misses to push the ball back, the score is updated. <br>
+Use 'Up' and 'Down' arrow keys to move right paddle and use 'w' and 's' to move left paddle.
+
+# Run the Program
+Download the folder, unzip it and open it in PyCharm(prefered IDE) or any other IDE of your choice.
