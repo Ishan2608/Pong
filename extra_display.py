@@ -15,13 +15,14 @@ class Display(Turtle):
         self.hideturtle()
         self.pensize(10)
         self.color(random.choice(COLOR_LIST))
-        self.text_display()
 
     def text_display(self):
         self.clear()
         self.dashed_line()
         self.goto(0, -30)
         self.write(f"Pong Game", align=ALIGNMENT, font=FONT)
+        self.goto(0, -50)
+        self.write("Press 'space' to   pause/continue", align=ALIGNMENT, font=("Arial", 12, "italic"))
         self.goto(0, 0)
         self.draw_circle()
 
@@ -45,3 +46,11 @@ class Display(Turtle):
     def change_color(self):
         self.color(random.choice(COLOR_LIST))
         self.text_display()
+
+    def game_status(self, paused):
+        self.clear()
+        self.goto(0, -30)
+        if paused:
+            self.write("Game is Paused", align=ALIGNMENT, font=FONT)
+        else:
+            self.text_display()
